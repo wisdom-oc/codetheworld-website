@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+  <!-- I linked a separated styles(CSS) file here to HTML-->
+  <link rel="stylesheet" href="styles/rock-paper-scissors.css">
+</head>
+<body>
+  <p class="title">Rock Paper Scissors</p>
+  
+  <!-- I executed JS function called onclick="
+    playGame('rock')
+  " to display some code when the button is clicked, same to other buttons below-->
+  <button onclick="
+    playGame('rock')
+  " class="move-button">
+    <img src="images/rock-emoji.png" class="move-icon">
+  </button>
+
+  <button onclick="
+    playGame('paper');
+  " class="move-button">
+    <img src="images/paper-emoji.png" class="move-icon">
+  </button>
+
+  <button onclick="
+    playGame('scissors');
+  " class="move-button">
+    <img src="images/scissors-emoji.png" class="move-icon">
+  </button>
+
+  <p class="js-result result"></p>
+  <p class="js-moves"></p>
+  <p class="js-score score"></p>
+
+  <!-- I used localStorage.removeItem('score') to reset the score back to zero, i also used updateScoreElement() to update the score when the button is clicked-->
+  <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+  " class="reset-score-button">Reset score
+  </button>
+
+  <!-- I linked a separated scripts(JavaScript) file here to HTML-->
+  <script src="scripts/rock-paper-scissors.js">
+    
+  </script>
+</body>
+</html>
