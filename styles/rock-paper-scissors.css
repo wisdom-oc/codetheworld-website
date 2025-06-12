@@ -1,6 +1,5 @@
 body {
-  background-color: rgb(25, 25, 25);
-  background: linear-gradient(red, blue, green);
+  background-image: repeating-linear-gradient(45deg, #173459, #903c56 15%, #78969d 20%);
   color: white;
   font-family: Arial, Roboto;
   text-align: center;
@@ -12,6 +11,7 @@ body {
 .title {
   font-size: 30px;
   font-weight: bold;
+  text-shadow: -1px 0 #173459, 0 1px #173459, 1px 0 #173459, 0 -1px #173459;
 }
 
 .move-icon {
