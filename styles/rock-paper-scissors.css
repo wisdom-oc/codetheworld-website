@@ -1,7 +1,12 @@
 body {
   background-color: rgb(25, 25, 25);
+  background: linear-gradient(red, blue, green);
   color: white;
   font-family: Arial, Roboto;
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  outline: none;
 }
 
 .title {
